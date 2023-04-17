@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 요소 선택자</title>
+    <style>
+        li{list-style-type: none;}
+        ul li:before{
+            content:url(icon.png);
+            margin-right: 5px;
+        }
+        ul li:after{
+            content: "번"
+        }
+        ul li :last-child:after{
+            content:"" ;
+        }
+        ul:before{
+            content:"" ;
+            display:block;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+        ul:after{
+            content:"마지막입니다." ;
+            color: red ;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h3>가상 요소 선택자 : 실제로 존재하지 않는 가상의 요소를 추가해서 스타일을 적용한다.</h3>
+    <h3>::before  ::after<br>
+        1.앞이나 뒤에 가상의 요소를 추가하여 스타일을 적용한다.<br>
+        2.content라는 css라는 속성을 반드시 함께 추가해서 가상 요소의 컨텐츠를 만들어 줘야 한다.<br>
+        3.inline 속성을 가진다.
+    </h3>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            width: 150px;
+            height: 150px;
+            margin: 80px;
+            border: 1px solid black;
+            float: left;
+        }
+        div p{
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            opacity: 0.5;
+        }
+        h3{clear: both;}
+
+        .a p:hover{transform:  translateX(100px); transition: all linear 2s 5s;}
+        .b p:hover{transform:  translateY(100px); transition: all ease 2s 1s;}
+        .c p:hover{transform:  translate(100px, 100px); transition: 2s;}
+
+        .d p:hover{transform:  scaleX(2); transition: all linear 2s 1s;}
+        .e p:hover{transform:  scaleY(0.5);transition: all linear 2s 2s;}
+        .f p:hover{transform:  scale(2,2); transition: all linear 1s 1s;}
+
+        .g p:hover{transform:  skewX(30deg); transition: all linear 1s 2s;}
+        .h p:hover{transform:  skewY(30deg); transition: all linear 1s 1s;}
+        .i p:hover{transform:  skew(30deg,30deg); transition: all linear 1s 1s;}
+
+        .j p:hover{transform:  rotate(45deg); transition: all linear 0.5s 0.5s;}
+        .k p:hover{transform:  rotate(-15deg); transition: all linear 2s 0.5s;}
+    </style>
+</head>
+<body>
+    <h2>&lt;transform&gt;</h2><br>
+    
+    <h3>translate 이동</h3>
+    <div class="a"><p></p></div>
+    <div class="b"><p></p></div>
+    <div class="c"><p></p></div>
+    
+    <h3>scale 확대, 축소</h3>
+    <div class="d"><p></p></div>
+    <div class="e"><p></p></div>
+    <div class="f"><p></p></div>
+
+    <h3>skew 기울이기</h3>
+    <div class="g"><p></p></div>
+    <div class="h"><p></p></div>
+    <div class="i"><p></p></div>
+
+    <h3>rotate 회전</h3>
+    <div class="j"><p></p></div>
+    <div class="k"><p></p></div>
+</body>
+</html>

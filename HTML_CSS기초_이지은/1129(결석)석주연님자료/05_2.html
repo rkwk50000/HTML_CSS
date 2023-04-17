@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 속성</title>
+    <style>
+        #a,#b,#c,#d,#e,#f,#g,#h,#i,#j{
+            width: 150px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        #b{
+            position:relative;
+            top:-30px;
+            left:60px;
+        }  
+        #d{
+            position:absolute;
+            top:0;
+            left:0;
+        }
+        #e{
+            position: absolute;
+            top: 500px;
+            left: 500px;
+        }
+        #f{
+            position:absolute;
+            top:50%;
+            left:50%;
+        }
+        #parent{
+            width: 1000px;
+            height: 500px;
+            border: 1px solid red;
+            position:relative;
+        }
+        #h{
+            position:absolute;
+            top: 30px;
+            left: 30px;
+        }
+        #j{
+            position: fixed;
+            top:0;
+            right:0;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>상대 위치 지정(position: relative), 절대 위치 지정(position: absolute)</h3>
+    <div id="a">요소A</div>
+    <div id="b">요소B<br>
+        position:relative;
+        top:-30px;
+        left:60px;</div>
+    <div id="c">요소C</div>
+
+    <div id="d">요소 D<br>
+        position:absolute;
+        top:0;
+        left:0;</div>
+    <div id="e">요소 E<br>osition: absolute;
+        top: 500px;
+        left: 500px;</div>
+    <div id="f">요소 F<br>
+    \position:absolute;
+    top:50%;
+    left:50%;</div>
+<hr>
+    <h3> 절대 위치 지정(position: absolute, 부모 요소가 있는 경우) </h3>
+    <div id="parent">
+        <div id="g">요소 G</div>
+        <div id="h">요소 H<br>
+            position:absolute;
+            top: 30px;
+            left: 30px;</div>
+        <div id="i">요소 I</div>
+    </div>
+<hr>
+    <h3>위치 고정 (position: fixed)</h3>
+    <div id="j">요소 J<br>
+        position: fixed;
+        top:0;
+        right:0;</div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{width: 600px; background-color: antiquewhite; overflow: hidden; height: 40px;}
+        nav:hover{height: 110px;}
+
+        ul.style1{}
+        ul.style1 > li{display: inline-block;background-color: aqua; list-style: none; width: calc((100% - 8% ) / 3); height: 20px;}
+        ul.style1 > li:nth-child(2){margin: 0 2%;}
+        ul.style1 > li > ul{background-color:rgba(0, 0, 0, 0.5); color: #fff; display: none;}
+
+        ul.style1 > li:hover ul{display: block;}
+
+        /* ---------------위치 고정----------------- */
+        ul.style2 > li{display: inline-block;background-color: aqua; list-style: none; width: calc((100% - 8% ) / 3); height: 20px; 
+        /* 상단에서 추가된 요소 */
+            position: relative; 
+        }
+        ul.style2 > li > ul{background-color: pink;position: absolute; top: 20px; display: none;}
+        ul.style2 > li:hover > ul{display: block;}
+        a:hover{color: yellow;}
+
+        /* 슬라이드 되도록 */
+        /*ul.style2 > li > ul{display: block; height: 0; overflow: hidden; transition: 1s;}
+        ul.style2 > li:hover > ul{height: 100px;}
+        ul.style2:hover >li >ul{height: 100px;} */
+
+        /* 전체가 한번에 뜨도록*/
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="style1">
+            <li>
+                <a>목록1</a>
+                <ul>
+                    <li><a>하위목록1</a></li>
+                    <li><a>하위목록2</a></li>
+                    <li><a>하위목록3</a></li>
+                    <li><a>하위목록4</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>목록2</a>
+                <ul>
+                    <li><a>하위목록01</a></li>
+                    <li><a>하위목록02</a></li>
+                    <li><a>하위목록03</a></li>
+                    <li><a>하위목록04</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>목록3</a>
+                <ul>
+                    <li><a>하위목록001</a></li>
+                    <li><a>하위목록002</a></li>
+                    <li><a>하위목록003</a></li>
+                    <li><a>하위목록004</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+    <nav>
+        <ul class="style2">
+            <li>
+                <a>목록1</a>
+                <ul>
+                    <li><a>하위목록1</a></li>
+                    <li><a>하위목록2</a></li>
+                    <li><a>하위목록3</a></li>
+                    <li><a>하위목록4</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>목록2</a>
+                <ul>
+                    <li><a>하위목록01</a></li>
+                    <li><a>하위목록02</a></li>
+                    <li><a>하위목록03</a></li>
+                    <li><a>하위목록04</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>목록3</a>
+                <ul>
+                    <li><a>하위목록001</a></li>
+                    <li><a>하위목록002</a></li>
+                    <li><a>하위목록003</a></li>
+                    <li><a>하위목록004</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

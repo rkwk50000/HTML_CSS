@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제2</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        h3{
+            margin: 15px 
+        }
+        #parent{
+            position: relative;
+            width: 650px;
+            height: 520px;
+            background-color: green;
+            margin:0 auto; 
+        }
+        #html,#python,#css,#c,#java,#php{
+            width: 100px;
+            height: 60px;
+            background-color: yellow;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px #eee;
+            font-weight: bold;
+            padding-top: 15px;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;                        
+        }
+        a:hover{
+            text-decoration: underline;
+            background-color: yellow;
+            color: orange;
+        }
+        #html{
+            position: absolute;
+            top: 70px;
+            left: 275px;
+        }
+        #python{
+            position: absolute;
+            top: 150px;
+            right: 140px;
+        }
+        #css{
+            position: absolute;
+            top: 150px;
+            left: 140px;
+        }
+        #c{
+            position: absolute;
+            bottom: 150px;
+            left: 140px;
+        }
+        #java{
+            position: absolute;
+            bottom: 150px;
+            right: 140px;
+        }
+        #php{
+            position: absolute;
+            bottom: 70px;
+            left: 275px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h3>프로그래밍 강좌</h3>
+    <div id="parent">
+        <div id="html"><a href="#">HTML<br>강좌</a></div>
+        <div id="python"><a href="#">파이썬<br>강좌</a></div>
+        <div id="css"><a href="#">CSS<br>강좌</a></div>
+        <div id="c"><a href="#">C#<br>강좌</a></div>
+        <div id="java"><a href="#">자바<br>강좌</a></div>
+        <div id="php"><a href="#">PHP<br>강좌</a></div>
+    </div>
+
+    
+</body>
+</html>

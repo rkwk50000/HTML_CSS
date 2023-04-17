@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css4</title>
+    <style>
+        h2, p {
+            color:green
+        }
+        .pink{
+            color: pink;
+        }
+        #fruit>li{
+            border: solid 1px blue;
+        }
+        #choco li:nth-child(2){
+            color: red;
+        }
+        #choco li:first-child{
+            color:orange;
+        }
+        #choco li:last-child{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h2>css 선택자의 종류</h2>
+    <p>
+        전체 선택자 *<br>
+        태그 선택자 p<br>
+        그룹 선택자 p, h2<br>
+        아이디 선택자 #아이디명<br>
+        클래스 선택자, .클래스명<br>
+        하위 선택자(자식 선택자) div p<br>
+        순서 선택자 : nth-child()
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. <span class="pink">Repellendus, cumque?</span> Accusantium, 
+        adipisci! <span class="pink">Eveniet natus quaerat porro saepe</span>, dolores sint sunt quod. <span class="pink">Maiores vitae doloribus 
+        laudantium</span> est exercitationem aliquam, sequi voluptatum?</p>
+
+        <ul id="fruit">
+            <li>
+                딸기
+                <ol>
+                    <li>바나나</li>
+                    <li>바나나</li>
+                    <li>바나나</li>
+                </ol>
+            </li>
+            <li>딸기</li>
+            <li>딸기</li>
+        </ul>
+
+        <ul id="choco">
+            <li>초코1</li>
+            <li>초코2</li>
+            <li>초코3</li>
+            <li>초코4</li>
+        </ul>
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: green;
+            text-decoration: underline;
+        }
+        h3{
+            font-style: italic;
+        }
+        p{
+            line-height: 1.8;
+        }
+        span{
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>요리의 방법</h1>
+
+	<h3>끓이기</h3>
+	<p>식품에 물을 가하여 100℃의 온도에서 <span>끓이는 조리 방법</span>이다. 국, 찌개 등을 만드는 방법으로 열을 가하여 조리를 한다. 곡류는 물과 함께 가열하면 녹말이 팽창하고 끈기 있는 상태가 된다.</p>
+
+	<h3>튀기기</h3>
+	<p>튀기기는 맛이 담백한 생선,새우, 채소 등에 많이 쓰이는 조리 방법으로 <span>끓는 기름 속에서 식품을 가열</span>하는 방법이다. </p>
+</body>
+</html>

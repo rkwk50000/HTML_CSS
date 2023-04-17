@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display 속성</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        span{
+            border: solid 1px black;
+            background-color: yellow;
+        }
+        div{
+            background-color: #eee;
+        }
+        h1, h3, div{
+            margin-bottom: 15px;
+        }
+        #a{
+            display: inline;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+        #b{
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+        #c{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+        #d{
+            display: none;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+        #e{
+            
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+        ul#w1{
+            background-color: green;
+            text-align: center;
+        }
+        ul#w2{
+            background-color: orange;
+            text-align: center;
+            padding: 5px;
+        }
+        ul li{
+            display: inline-block;
+            
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            width: 150px;
+            padding: 10px;
+        }
+        a:hover{
+            background-color: #fff;
+            color: green;
+        }
+        #dress{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>display 속성</h1>
+
+    <h3>① display: inline</h3>
+    <div>글자 1 <span id="a">글자 2</span> 글자3</div>
+
+    <h3>② display: block</h3>
+    <div>글자 1 <span id="b">글자 2</span> 글자3</div>
+
+    <h3>③ display: inline-block</h3>
+    <div>글자 1 <span id="c">글자 2</span> 글자3</div>
+
+    <h3>④ display: none</h3>
+    <div>글자 1 <span id="d">글자 2</span> 글자3</div>
+
+    <h3>⑤ display: 속성 사용 안함</h3>
+    <div>글자 1 <span id="e">글자 2</span> 글자3</div>
+
+    <hr>
+    <h3>
+        <span>inline 방식의 특징</span><br>
+        1. 수평 방향으로 요소 배치, 줄 바꿈 X<br>
+        2. width, height 적용 X <br>
+        3. 상하단 마진 적용 X
+    </h3>
+    <h3>
+        <span>block 방식의 특징</span><br>
+        1. 수직 방향으로 요소 배치, 앞 뒤 줄 바꿈 O<br>
+        2. width, height 적용 O <br>
+        3. 모든 마진 적용 O
+    </h3>
+    <h3>
+        <span>inline-block 방식의 특징</span><br>
+        1. 수평 방향으로 요소 배치, 줄 바꿈 X<br>
+        2. width, height 적용 O <br>
+        3. 모든 마진 적용 O
+    </h3>
+    <h3>
+        <span>inline</span> : span, a, img, input, textarea, button, select, option 등<br>
+        <span>block</span> : div, p, hn, form, table, ul, ol, li, video, header, footer, section 등
+    </h3>
+    <hr>
+    <ul id="w1">
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+    </ul>
+    <hr>
+    <ul id="w2">
+        <li><a href="#">사과</a></li>
+        <li><a href="#">감</a></li>
+        <li><a href="#">배</a></li>
+        <li><a href="#">귤</a></li>
+    </ul>
+   <hr>
+   <div id="dress">
+   <img src="dress.png">
+   </div>
+
+    
+</body>
+</html>

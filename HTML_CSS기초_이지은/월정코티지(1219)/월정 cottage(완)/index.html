@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>월정 cottage</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Space</a></li>
+                        <li><a href="#">Facility</a></li>
+                        <li><a href="#">Reservition</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </nav>
+                <div class="naver"><a href="#">네이버 실시간 예약</a></div>
+            </div>
+        </header><!---------header---------------->
+
+        <section class="section01">
+            <div class="inner">
+                <a href="#"><img src="img/logo2.png"></a>
+                <p>제주에서 가장 아름다운 색을 간직하고 있는 월정 해변가에 위치한 독채펜션<br>
+                   제주 가정집을 개조하여 제주 느낌 그대로 머무를수 있는 곳<br>
+                   해변과 접근성이 좋아 아이들이 해변에서 놀기 좋은 이 곳<br>
+                   근처 하나로마트가 있어 물품구입에 편리한 월정 Cottage
+                </p>
+            </div>
+        </section><!------------section01---------------------->
+
+        <section class="section02">
+            <div class="inner">
+                <h3>월정 Cottage Room</h3>
+                <ul>
+                    <li><a href="#"><img src="img/room1.png"></a></li>
+                    <li><a href="#"><img src="img/room2.png"></a></li>
+                    <li><a href="#"><img src="img/room3.png"></a></li>
+                    <li><a href="#"><img src="img/room4.png"></a></li>
+                </ul>
+            </div>
+        </section><!------------section02---------------------->
+
+        <section class="section03">
+            <div class="inner">
+                <h1>Facility</h1>
+                <ul>
+                    <li>
+                        <a href="#"><img src="img/mart.png"></a>
+                        <h3>하나로마트</h3>
+                        <div class="mart">마트 영업 시간</div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/barbecue.png"></a>
+                        <h3>정원 바비큐</h3>
+                        <div class="BBQ">바비큐 이용안내</div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/beach.png"></a>
+                        <h3>월정리 앞 바닷가</h3>
+                        <div class="sea">주변 가볼만한 곳</div>
+                    </li>
+                </ul>
+            </div>
+        </section><!------------section03---------------------->
+
+        <section class="section04">
+            <div class="inner">
+                <ul>
+                    <li><a href="#">오시는길</a></li>
+                    <li><a href="#">실시간 예약</a></li>
+                </ul>
+            </div>
+        </section><!------------section04---------------------->
+        
+        <footer>
+            <div class="inner">
+                <p>
+                    월정 Cottage   대표: 이도훈, 정찬희<br>
+                    주소: 제주특별자치도 제주시 구좌읍 월정3길 53-13(월정리) / 제주시 구좌읍 월정리 563번지<br>
+                    TEL. 010-2528-6275  composer110@naver.com<br>
+                    사업자등록번호: 222-20-12254
+                </p>
+                <h5> Copyright(c) 월정리 Cottage.All Right Reserved.</h5>
+                <a href="#">사업자정보확인</a>
+            </div>
+        </footer><!------------footer---------------------->
+    </div><!------------wrap---------------------->
+
+         <div><a href="#" class="on">예약하기</a></div>
+    
+</body>
+</html>
+
+
+.section03 ul li:hover img{
+    transform: scale(2,2);
+    border-radius: 50%;
+    
+    box-shadow: 10px 30px 40px rgba(0,0,0,0.2);
+    transition: all ease 0.5%;
+}
+
+.section05 .heart{
+    background-color: #3AB34A;
+    background-image: url(../img/ic_heart6.png);
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    padding-top: 85px;
+    position: relative;
+    left: 50%; bottom: -30px;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.section05 ul li:hover .heart{
+    opacity: 1;
+    bottom: -90px;
+    transform: 1s;
+}
+.section05 ul li:hover img{
+    transform: scale(130%, 130%);
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+.section05 ul li:hover h3{
+    transform: translateY(-150px);
+    transition: 1s;
+}
+.section05 ul li:hover{z-index: 99

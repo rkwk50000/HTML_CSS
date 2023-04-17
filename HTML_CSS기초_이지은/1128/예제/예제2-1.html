@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제2-1</title>
+    <style>
+        input{
+            width: 150px;
+            height: 25px;
+        }
+        #col1{
+            width: 150px;
+        }
+        #col2{
+            width: 150px;
+            height: 50px;
+        }
+        #col5{
+            width: 50px;
+            height: 25px;
+        }
+        #col6{
+            display: inline;
+        }
+        #col7{
+            display: inline;
+        }
+        select{
+            width: 50px;
+            height: 25px;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>회원가입 폼</h2>
+    
+    <form>
+        <table>
+            <tr>
+                <td id="col1">아이디</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td id="col2">비밀번호</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td id="co13">비밀번호 확인</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td id="col4">이름</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td id="col5">이메일</td>
+                <td><input type="email">@
+                    <select>
+                        <option>직접 입력</option>
+                        <option>naver.com</option>
+                        <option>hanmail.net</option>
+                        <option>gmail.com</option>
+                        <option>nate.com</option>
+                    </select><br></td>
+            </tr>
+            <tr>
+                <td id="col6">이메일 수신</td>
+                <td><input type="radio" name="email" checked>수신 <input type="radio" name="email">비수신</td>
+            </tr>
+            <tr>
+                <td id="col7">가입 경로
+                    <input type="checkbox" name="name1">친구추천
+                    <input type="checkbox" name="name2">인터넷검색
+                    <input type="checkbox" name="name3">기타
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="col8">인사말</td>
+                <td><input type="text">
+                    <textarea cols="40" row="20"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="저장하기"></td>
+                <td><input type="취소하기"></td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>

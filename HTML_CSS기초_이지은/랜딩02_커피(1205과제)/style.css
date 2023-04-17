@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+}
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+/********************************* section01 ***************************************/
+#section01 img{
+    width: 1200px;
+    height: 1260px;
+    display: block;
+   
+}
+/********************************* section02 ***************************************/
+#section02{
+    background-image: url(images/back_02.jpg);
+    height: 530px;
+    color: #B6B2B2;
+    display: block;
+   
+}
+#section02 h1{
+    font-family: 'Song Myung', serif;
+    color:#FFFFFF;
+    font-size: 60px;
+    padding-top: 50px;
+    text-align: center;
+}
+#section02 h2{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+#section02 ul{
+    margin-left: 150px;
+}
+#section02 ul li{
+    float: left;
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+   
+    list-style-type: none;
+}
+.on{
+    color: #DEB887;
+}
+#section02 p{
+    padding-top: 20px;
+}
+/********************************* section03 ***************************************/
+#section03{
+    width: 1200px;
+    height: 860px;
+    float: left;
+}
+
+#section03 a{
+    border: solid 1px;
+    text-decoration: none;
+    color: #C3B2B2;
+    padding: 10px 30px;   
+}
+#section03 a:hover{
+    background-color:beige;
+    color: #38302E;
+}
+#section03 h4{
+    padding-top: 70px;
+    margin-left: 50px;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+#section03 p{
+    
+    margin-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+}
+#section03 h3{
+    margin-left: 50px;
+    padding-bottom: 30px;
+}
+
+.con1 img{
+    width: 725px;
+    height: 440px;
+    object-fit: cover;
+    float: left;
+}
+.con2{
+    width: 475px;
+    height: 440px;
+    background-image: url(images/back_11.jpg);
+    background-size: cover;
+    color: #C3B2B2;
+    float: left;
+}
+
+.con3{
+    width: 475px;
+    height: 420px;
+    background-image: url(images/back_12.jpg);
+    background-size: cover;
+    color: #C8B9B1; 
+    float: left; 
+}
+
+.con4 img{
+    width: 725px;
+    height: 420px;
+    float: left;
+    object-fit: cover;
+}

@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+}
+#wrap{
+    width: 1000px;
+    height: 840px;
+    margin: 0 auto;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+<!-------aside--------->
+aside{
+    width: 170px;
+    height: 360px;  
+    float: left;
+}
+aside img{
+    display: block;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+aside ul{
+    border: solid 2px;
+    width: 174px;
+    margin-left: 10px;
+}
+aside ul li{
+    border-bottom: solid 1px #92949A;
+    background-color: #4D5059;
+    color:#d4d5d6 ;
+    padding: 10px;
+    
+}
+aside ul li a{
+    display: block;
+    padding: 10px;
+    
+}
+aside ul li a:hover{
+    background-color: #757677;
+}
+<!-----------------section------------->
+/******************section01**************************/
+.one{
+    
+    height: 830px;
+    margin-left: 210px;
+    float: right;
+}
+#section01{
+    float: left;
+    
+    
+    margin-left: 210px;
+    margin-bottom: 50px;
+    width: 790px;
+    height: 450px;
+}
+#section01 img{
+    width:480px;
+    height: 450px;
+}
+ 
+#section01 .class02{
+    clear: both;
+}
+.class02{
+    width: 310px;
+    height: 450px;
+    line-height: 20px;
+}
+.class02 h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.class02 h2{
+    margin-top: 20px;
+}
+.class02 h3{
+    font-size: 14px;
+    color: #FFF;
+    margin-top: 20px;
+}
+.class02 p{
+    color: #C0C4C0;
+    font-size: 12px;
+    font-weight: bold;
+}
+/******************section02**************************/
+#section02{
+    width: 790px;
+    height: 150px;
+    margin: 10px;
+    
+}
+#section03{
+    width: 790px;
+    height: 150px;
+    margin: 10px;
+    
+}
+.class01 img{
+    width: 480px;
+    height: 450px;  
+    float: left;
+}
+.class02{
+    float: right;
+    width: 310px;
+    height: 450px;
+    background-color: #4D5059;
+    padding: 10px;
+}
+.class02 h1, h2{
+    color: #F5EFE2;
+}
+.class02 span{
+    color: #8FD0E8;
+}
+.class03{
+    float: left;
+    width: 230px;
+    height: 150px;
+}
+#section02 img{
+    float: right;
+    width: 230px;
+    height: 150px;
+}
+#section03 img{
+    float: right;
+    width: 230px;
+    height: 150px;
+}

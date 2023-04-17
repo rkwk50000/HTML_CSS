@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 영역 스타일이 익숙해지기 전까지 배경색을 넣어 영역을 구분해 보면서 스타일을 넣으면 쉽다. */
+        ul{background-color: lavender; width: 900px;padding: 100px 50px; box-sizing: border-box; margin: 0 auto;}
+        
+        li{display: inline-block; background-color: pink; width: calc((100% - 150px) / 3); height: 220px; text-align: center; 
+            overflow: hidden;
+        }
+        /* calc() : 사칙연산을 사용하여 유동적인 값을 구함 */
+        /* overflow : 지정한 사이즈 밖으로 나가는 요소들을 숨김 */
+
+        li:nth-child(2){margin: 0 25px;}
+        /* a:nth-child() : a의 전체 형제 중에 ()번째 */
+        /* a:nth-of-type() : a와 형제인 a 중에 ()번째 */
+
+        ul li img{display: block; margin: (0 auto);}
+        ul div{width: 100%; height: 225px; padding: 10px; box-sizing: border-box; background-color: rgba(0,0,0,0.5); color: #fff; transition: 1s;}
+        
+        ul.style1 li:hover div{transform: translateY(-220px);}
+
+        .style2 li div{transform: translate(100%,-220px);} 
+        .style2 li:hover div{transform: translate(0%,-220px);}
+
+        .style3 li{border-radius: 20px; border: 1px solid;}
+        .style3 li div{transform: translate(0,-225px); opacity: 0;}
+        .style3 li:hover div{opacity: 1;}
+    </style>
+</head>
+<body>
+    <ul class="style1">
+        <li>
+            <img src="images/1.jpg" alt="목록1">
+            <div>
+                <h3>제목 자리</h3>
+                <p>내용이 들어가는 자리</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/2.jpg" alt="목록2">
+            <div>
+                <h3>제목 자리</h3>
+                <p>내용이 들어가는 자리</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/3.jpg" alt="목록3">
+            <div>
+                <h3>제목 자리</h3>
+                <p>내용이 들어가는 자리</p>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <ul class="style2">
+        <li>
+            <img src="images/1.jpg" alt="목록1">
+            <div>
+                <h3>제목 자리</h3>
+                <p>내용이 들어가는 자리</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/2.jpg" alt="목록2">
+            <div>
+                <h3>제목 자리</h3>
+                <p>내용이 들어가는 자리</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/3.jpg" alt="목록3">
+            <div>
+                <h3>제목 자리</h3>
+                <p>내용이 들어가는 자리</p>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <ul class="style3">
+        <li>
+            <img src="images/1.jpg" alt="목록1">
+            <div>
+                <h3>제목 자리</h3>
+                <p>내용이 들어가는 자리</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/2.jpg" alt="목록2">
+            <div>
+                <h3>제목 자리</h3>
+                <p>내용이 들어가는 자리</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/3.jpg" alt="목록3">
+            <div>
+                <h3>제목 자리</h3>
+                <p>내용이 들어가는 자리</p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
